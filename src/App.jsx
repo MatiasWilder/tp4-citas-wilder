@@ -1,14 +1,19 @@
 import { useState } from 'react'
-import formulario from './form.jsx';
-import listado from './listado.jsx';
-
+import Formulario from './form'
+import Listado from './listado'
 
 function App() {
-
+  const [citas] = useState([
+    { id: 1, texto: '' },
+    { id: 2, texto: '' },
+    { id: 3, texto: '' }
+  ])
 
   return (
-    
-
+    <div className="app-container">
+      <Formulario />
+      <Listado citas={citas} />
+    </div>
   )
 }
 
