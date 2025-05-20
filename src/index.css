@@ -1,26 +1,112 @@
-.app-container {
-  display: flex;
-  padding: 10px;
-  width: 90%;
-  margin: 30px auto;
-  font-family: sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.formulario {
-  flex: 1;
-  border: 3px solid orange;
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #cce6ff;
+  color: #000;
   padding: 20px;
-  margin-right: 20px;
 }
 
-.listado {
-  flex: 1;
-  border: 3px solid brown;
-  padding: 20px;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.form,
+.Listado {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  background-color: white;
+  padding: 15px;
+  border: 2px solid #999;
+  border-radius: 5px;
+}
+
+.form {
+  margin-right: 4%;
+}
+
+.form h2,
+.Listado h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #003366;
+}
+
+.form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form textarea {
+  height: 60px;
+  resize: none;
+}
+
+.form input[type="submit"] {
+  background-color: #005cbf;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #004099;
 }
 
 .cita {
-  border: 2px solid steelblue;
-  padding: 100px;
-  margin-bottom: 30px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: 1px solid #777;
+  border-radius: 4px;
+  margin-bottom: 15px;
 }
+
+.cita span {
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+
+.cita p {
+  margin: 4px 0;
+}
+
+.cita button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cita button:hover {
+  background-color: #b52b27;
+}
+

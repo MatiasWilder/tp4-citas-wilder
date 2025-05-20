@@ -1,20 +1,19 @@
 import { useState } from 'react'
 import Formulario from './form'
 import Listado from './listado'
+import '/src/index.css'
 
 function App() {
-  const [citas] = useState([
-    { id: 1, texto: '' },
-    { id: 2, texto: '' },
-    { id: 3, texto: '' }
-  ])
+  const [citas, setCitas] = useState([])
 
   return (
-    <div className="app-container">
-      <Formulario />
-      <Listado citas={citas} />
+    <div className="container">
+      <h1>Administrador de pacientes</h1>
+      <Formulario citas={citas} setCitas={setCitas} />
+      <Listado citas={citas} setCitas={setCitas} />
     </div>
   )
 }
 
 export default App
+

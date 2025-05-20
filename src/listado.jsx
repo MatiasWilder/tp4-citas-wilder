@@ -1,14 +1,25 @@
-import Cita from './cita'
+import Cita from './Cita'
 
-function Listado({ citas }) {
+function Listado({ citas, setCitas }) {
+  const eliminarCita = (index) => {
+    let copia = [...citas]
+    copia.splice(index, 1)
+    setCitas(copia)
+  }
+
   return (
-    <div className="listado">
-      <h2>Listado</h2>
-      {citas.map((cita) => (
-        <Cita key={cita.id} texto={cita.texto} />
-      ))}
+    <div className="Listado">
+      <h2>Administra tus citas</h2>
+      {citas.length === 0 ? (
+        <p>No hay citas por ahora</p>
+      ) : (
+        citas.map((cita, i) => (
+          <Cita key={i} cita={cita} indice={i} eliminarCita={eliminarCita} />
+        ))
+      )}
     </div>
   )
 }
 
 export default Listado
+
