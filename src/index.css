@@ -6,8 +6,8 @@
 
 body {
   font-family: Verdana, sans-serif;
-  background-color: #bebaba;
-  color: #000;
+  background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+  color: #000000;
   padding: 20px;
 }
 
@@ -27,9 +27,8 @@ body {
   display: inline-block;
   vertical-align: top;
   width: 48%;
-  background-color: white;
   padding: 15px;
-  border: 2px solid #999;
+
   border-radius: 5px;
 }
 
@@ -41,7 +40,7 @@ body {
 .Listado h2 {
   margin-bottom: 20px;
   font-size: 20px;
-  color: #003366;
+  color: #ffffff;
 }
 
 .form label {
