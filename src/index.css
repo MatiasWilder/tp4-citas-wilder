@@ -6,7 +6,7 @@
 
 body {
   font-family: Verdana, sans-serif;
-  background-color: #cce6ff;
+  background-color: #bebaba;
   color: #000;
   padding: 20px;
 }
@@ -81,7 +81,7 @@ body {
 .cita {
   background-color: #f5f5f5;
   padding: 10px;
-  border: 1px solid #777;
+  border: 1px solid;
   border-radius: 4px;
   margin-bottom: 15px;
 }
