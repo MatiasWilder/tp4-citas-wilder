@@ -7,6 +7,7 @@ function Listado({ citas, setCitas }) {
     setCitas(copia)
   }
 
+
   return (
     <div className="Listado">
       <h2>Administra tus citas</h2>
